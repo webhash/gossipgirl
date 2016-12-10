@@ -1,0 +1,41 @@
+<head>
+  <title>Gossip Girl's World</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <CENTER><h1>Updates from Gossip World!</h1></CENTER>
+       {{> loginButtons}}
+    </header>
+
+ 
+    <table>
+      <th>Season</th>
+      <th>Episode</th>
+      <th>Title</th>
+      <th>Cast</th>
+      
+      {{#each updates}}
+
+        {{> update}}
+
+      {{/each}}
+      
+    </table>
+ 
+
+  </div>
+
+</body>
+
+<template name="update">
+      <tr>
+      <th>{{season}}</th>
+      <th>{{ episode }}</th>
+      <th>{{ title }}</th>
+      <th>{{cast}}</th>
+      </tr>
+</template>
