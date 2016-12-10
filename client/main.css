@@ -40,15 +40,21 @@ body {
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 1200px;
 }
 
-td, th {
-    border: 1px solid #918e82;
+td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    color: black;
+    word-break:break-all;
+}
+th {
+    border: 1px solid black;
     text-align: left;
     padding: 8px;
 }
-
 tr:nth-child(even) {
     background-color: #315479;
 }
